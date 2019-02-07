@@ -52,21 +52,21 @@ insert into issue_tracker.issues (issue_id , issue_time , description , status )
 
 # Swagger API Documentation 
 
-http://localhost:8080/swagger-ui.html ==> http://13.58.224.21:8080/swagger-ui.html
+http://localhost:8080/swagger-ui.html ==> http://ec2-18-191-14-34.us-east-2.compute.amazonaws.com:8080/swagger-ui.html
 
 # application deployed location
 
-Currently application could be accessed here - http://13.58.224.21:8080
+Currently application could be accessed here - http://ec2-18-191-14-34.us-east-2.compute.amazonaws.com:8080
 
-1. Total number of open issues - http://13.58.224.21:8080/get-all-open-tickets
-2. Number of open issues that were opened in the last 24 hours - http://13.58.224.21:8080/get-last-open-tickets/1
-3. Number of open issues that were opened more than 24 hours ago but less than 7 days ago - http://13.58.224.21:8080/get-last-open-between-dates/1/7
-4. Number of open issues that were opened more than 7 days ago - http://13.58.224.21:8080/get-opened-after-n-days/7
+1. Total number of open issues - http://ec2-18-191-14-34.us-east-2.compute.amazonaws.com:8080/get-all-open-tickets
+2. Number of open issues that were opened in the last 24 hours - http://ec2-18-191-14-34.us-east-2.compute.amazonaws.com:8080/get-last-open-tickets/1
+3. Number of open issues that were opened more than 24 hours ago but less than 7 days ago - http://ec2-18-191-14-34.us-east-2.compute.amazonaws.com:8080/get-last-open-between-dates/1/7
+4. Number of open issues that were opened more than 7 days ago - http://ec2-18-191-14-34.us-east-2.compute.amazonaws.com:8080/get-opened-after-n-days/7
 
 # note 
 
 1. Since I am using cassandra as a database, faced configuration problem while deploying in AWS. Hence, I have created one more repo - https://github.com/nitiprabhu/issue_tracker_without-db, where data are hardcoded as a replica of cassandra data. 
-2. Since I have not worked on front end technologies, hence I am using swagger libraries to display JSON response data instead of html, which could be access here http://localhost:8080/swagger-ui.html ==> http://13.58.224.21:8080/swagger-ui.html.
+2. Since I have not worked on front end technologies, hence I am using swagger libraries to display JSON response data instead of html, which could be access here http://localhost:8080/swagger-ui.html ==> http://ec2-18-191-14-34.us-east-2.compute.amazonaws.com:8080/swagger-ui.html.
 
 # enhancements - if got more time
 
